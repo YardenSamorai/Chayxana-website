@@ -1,0 +1,15 @@
+.legendery-wrapper {
+    position: relative;
+}
+
+.legendery-wrapper > svg {
+    width: 100%;
+    height: 100%;
+}
+
+.legendery-wrapper>svg > line {
+    stroke: white;
+}
+.legendery-wrapper > svg > path {
+    fill: white !important;
+}

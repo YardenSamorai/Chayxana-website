@@ -1,0 +1,75 @@
+.big-bg {
+    position: absolute;
+    top: -5px;
+    z-index: -1;
+    width: 101%;
+    max-height: 80%;
+    filter: brightness(0.7) blur(1.4px);
+    object-fit:cover ;
+}
+
+.cutlery-logo {
+    filter: invert(1);
+    margin: 40px;
+}
+
+.logo-title {
+    display: grid;
+    place-items: center;
+    margin-top: 200px;
+    color:white;
+    height: 36em;
+}
+
+.logo-text {
+    text-align: center;
+}
+
+.logo-title > .logo-text > h4 {
+    font-size: 2.5em;
+    font-weight: 400;
+    font-family: 'Crimson Pro', serif;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.190em;
+}
+
+.logo-title > .logo-text > h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4.5em;
+    letter-spacing: 0.180em;
+    margin: 0;
+}
+
+.mouse-icon {
+    height: 60px;
+    width: 35px;
+    border: 3px solid white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.mouse-wheel {
+    background-color: white;
+    width: 10px;
+    height: 15px;
+    position: absolute;
+    border-radius: 10px;
+    animation: scrollmove 0.8s infinite ease-in-out;
+}
+
+@keyframes scrollmove {
+    from {
+        top: 8px
+    }
+    to {
+        top: 15px;
+    }
+    
+}
+
+.our-story-container {
+    height: 900px;
+}

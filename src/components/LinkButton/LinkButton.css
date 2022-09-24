@@ -1,0 +1,13 @@
+.link-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 1.15em;
+    font-family: 'Crimson Pro', serif;
+    padding: 10px;
+}
+
+.link-btn:hover {
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+}

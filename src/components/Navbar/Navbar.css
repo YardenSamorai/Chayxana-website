@@ -1,0 +1,23 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.navbar-container>.logo {
+    width: 125px;
+}
+
+
+.actions-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.actions-wrapper > span::before {
+    content: '-';
+    color: white;
+    margin: 0 10px;
+}
