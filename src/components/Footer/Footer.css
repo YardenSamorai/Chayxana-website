@@ -1,0 +1,32 @@
+.main-footer {
+    width: 78%;
+    margin: auto;
+    padding: 20px;
+    color: white;
+    font-family: var(--font-heb);
+    font-size: 1.2em;
+  }
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-decoration: none;
+    text-align: right;
+    justify-content: space-between;
+    
+}
+
+.col {
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+.row ul {
+    list-style-type: none;
+}
+
+.col > h4 {
+    text-align: center;
+    color: var(--color-green);
+}

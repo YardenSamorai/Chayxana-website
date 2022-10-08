@@ -1,0 +1,49 @@
+.icons-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.icon-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+.icon-item {
+    position: relative;
+    padding: 20px 50px;
+}
+
+.icon-item:hover:before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: -10px;
+    border-bottom: 20px solid var(--color-green);
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+
+.active {
+    transform: rotate(0deg);
+}
+
+.active:before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: -10px;
+    border-bottom: 20px solid var(--color-green);
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
+
+.active>img {
+
+    transform: rotate(-30deg);
+    transition: all 0.5s ease-in-out;
+    margin-bottom: -2px;
+}

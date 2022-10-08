@@ -1,24 +1,24 @@
 import React from 'react'
 import LinkButton from '../LinkButton/LinkButton'
 import './Navbar.css'
-import LegenderyLogo from '../LegenderyLogo/LegenderyLogo'
+import Logo from '../Logo/Logo';
 
 const Navbar = () => {
     return (
         <nav className="navbar-container">
             <div className="logo">
-                <LegenderyLogo className="logo-component" />
+                <Logo className="logo-component" />
             </div>
             <div className="actions-wrapper">
-                <LinkButton name={"Home"} to={"#"} />
+                <LinkButton name={"יצירת קשר"} to={"#"} />
                 <span></span>
-                <LinkButton name={"Menus"} to={"#"} />
+                <LinkButton name={"הזמנות"} to={"#"} />
                 <span></span>
-                <LinkButton name={"Reservations"} to={"#"} />
+                <LinkButton name={"עלינו"} to={"#"} />
                 <span></span>
-                <LinkButton name={"About"} to={"#"} />
+                <LinkButton name={"תפריט"} to={"#"} />
                 <span></span>
-                <LinkButton name={"Contact"} to={"#"} />
+                <LinkButton name={"בית"} to={"#"} />
             </div>
         </nav>
     )

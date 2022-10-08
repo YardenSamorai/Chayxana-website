@@ -2,19 +2,27 @@ import React from 'react'
 import "./OurStory.css";
 
 const OurStory = () => {
+
+    const texts = {
+        title: "הסיפור שלנו",
+        subtitle: "מתחיל",
+        desc: " מסעדת צייחנה היא מסעדה אותנטית מהמטבח הבוכרי קווקזי. אצלנו תוכלו להנות מאוכל אותנטי משובח ואיכותי, מתכונים שעוברים במשך דורות. בימי חמישי ושישי תוכלו לרכוש אוכל מוכן(קייטרינג). אנחנו מארחים אירועים פרטיים כגון ימי הולדת,בר מצווה ובריתות באירועים עד 80 איש."
+    }
+
     return (
         <div className="ourstory-container">
-                <img className="img-ourstory" src={require('../../assets/ourstory-img.jpg')}></img>
-                <img className="img-ourstory" src={require('../../assets/ourstory-img2.jpg')}></img>
-                <img className="img-ourstory" src={require('../../assets/ourstory3.jpg')}></img>
-            <div className="text-ourstory">
-                <h1>Our Story</h1>
-                <h3>Begins</h3>
-                <p>מסעדת צייחנה היא מסעדה אותנטית 
-                    מהמטבח הבוכרי קווקזי אצלנו תוכלו להנות מאוכל 
-                    משובח ואיכותי בנוסף אנו עושים גם אירועים 
-                    פרטים עד 70 איש וקיטרינג ביתי בימי שישי.
-                </p>
+            <div className="ourstory-card">
+                <div className='ourstory-images'>
+                    <img className="img-ourstory" alt="#" src={require('../../assets/ourstory-img.jpg')}></img>
+                    <img className="img-ourstory" alt="#" src={require('../../assets/ourstory-img2.jpg')}></img>
+                    <img className="img-ourstory" alt="#" src={require('../../assets/ourstory3.jpg')}></img>
+                </div>
+
+                <div className="ourstory-text" dir="rtl">
+                    <h1>{texts.title}</h1>
+                    <h3>{texts.subtitle}</h3>
+                    <p>{texts.desc}</p>
+                </div>
             </div>
         </div>
     )

@@ -1,0 +1,33 @@
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 30px;
+}
+
+.menu-content-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.menu-content-price > h4 {
+  font-size: 1.6em;
+  color: var(--color-black);
+}
+
+.menu-content-price> :last-child {
+  color: var(--color-green);
+}
+
+.menu-content-price>.dot {
+  flex-grow: 1;
+  border-bottom: 1px dashed black;
+  margin: 0 5px;
+}
+
+.menu-content>.menu-content-desc {
+  margin-top: -15px;
+  font-size: 1.35em;
+}

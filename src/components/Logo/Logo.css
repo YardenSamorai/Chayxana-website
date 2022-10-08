@@ -1,0 +1,9 @@
+.logo-wrapper {
+    position: relative;
+}
+
+.logo-wrapper > svg {
+
+    width: 100%;
+    height: auto;
+}

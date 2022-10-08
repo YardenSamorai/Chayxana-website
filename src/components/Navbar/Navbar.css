@@ -6,7 +6,8 @@
 }
 
 .navbar-container>.logo {
-    width: 125px;
+    min-width: 200px;
+    max-width: 250px;
 }
 
 
@@ -20,4 +21,14 @@
     content: '-';
     color: white;
     margin: 0 10px;
+}
+
+@media screen and (max-width: 1025px) {
+    .actions-wrapper {
+        display: none;
+    }
+
+    .navbar-container {
+        justify-content: center;
+    }
 }

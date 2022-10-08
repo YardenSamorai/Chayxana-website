@@ -5,7 +5,7 @@
     width: 101%;
     max-height: 80%;
     filter: brightness(0.7) blur(1.4px);
-    object-fit:cover ;
+    object-fit: cover;
 }
 
 .cutlery-logo {
@@ -17,7 +17,7 @@
     display: grid;
     place-items: center;
     margin-top: 200px;
-    color:white;
+    color: white;
     height: 36em;
 }
 
@@ -25,51 +25,87 @@
     text-align: center;
 }
 
-.logo-title > .logo-text > h4 {
+.logo-title>.logo-text>h4 {
     font-size: 2.5em;
     font-weight: 400;
-    font-family: 'Crimson Pro', serif;
+    font-family: 'Pacifico', cursive;
     text-transform: uppercase;
     margin: 0;
     letter-spacing: 0.190em;
 }
 
-.logo-title > .logo-text > h1 {
-    font-family: 'Pacifico', cursive;
+.logo-title>.logo-text>h1 {
+    font-family: var(--font-heb);
     font-size: 4.5em;
     letter-spacing: 0.180em;
     margin: 0;
 }
 
-.mouse-icon {
-    height: 60px;
-    width: 35px;
-    border: 3px solid white;
-    border-radius: 100px;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.footer-wrapper {
+    background-color: #A4984C;
+    height: 350px;
+    width: 101%;
     display: flex;
-    justify-content: center;
-    position: relative;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
 }
 
-.mouse-wheel {
-    background-color: white;
-    width: 10px;
-    height: 15px;
-    position: absolute;
-    border-radius: 10px;
-    animation: scrollmove 0.8s infinite ease-in-out;
+.footer-content {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
-@keyframes scrollmove {
-    from {
-        top: 8px
+.footer {
+    background-color: #0D0D0E;
+    opacity: 90%;
+}
+
+@media screen and (max-width: 1921px) and (min-width: 1026px)  {
+    .logo-title {
+        margin-top: 0;
+        height: 40em;
     }
-    to {
-        top: 15px;
+
+    .logo-title>.logo-text>h4 {
+        font-size: 1.5em;
     }
-    
+
+    .logo-title>.logo-text>h1 {
+        font-size: 2.5em;
+    }
+
+
+    .cutlery-logo {
+        width: 20%;
+        margin: 0;
+    }
+
 }
 
-.our-story-container {
-    height: 900px;
+@media screen and (max-width: 1025px) {
+    .logo-title {
+        margin-top: 0;
+        height: 19em;
+    }
+
+    .logo-title>.logo-text>h4 {
+        font-size: 1.5em;
+    }
+
+    .logo-title>.logo-text>h1 {
+        font-size: 2.5em;
+    }
+
+    .cutlery-logo {
+        width: 20%;
+        margin: 0;
+    }
 }
