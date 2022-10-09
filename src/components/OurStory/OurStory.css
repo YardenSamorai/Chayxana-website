@@ -6,7 +6,7 @@
 
 .ourstory-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
     border-radius: 10px;
 }
