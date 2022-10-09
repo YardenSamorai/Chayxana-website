@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../Logo/Logo'
+import MapBox from '../MapBox/MapBox'
 import './Footer.css'
 
 const Footer = () => {
@@ -47,7 +48,11 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="box-2 col footer-logo">
+          <div className="box-2 col embd-map">
+              {/* <MapBox /> */}
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d597.5310203190166!2d34.88519564855042!3d32.09234248328812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d366cbd9ffa4d%3A0x999553a1b6554d41!2sBar%20Kochva%20St%2032%2C%20Petah%20Tikva!5e0!3m2!1sen!2sil!4v1665327261053!5m2!1sen!2sil" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          <div className="box-3 col footer-logo">
             <Logo />
           </div>
         </div>
