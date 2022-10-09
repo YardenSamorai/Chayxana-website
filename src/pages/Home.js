@@ -32,17 +32,17 @@ const Home = () => {
                 <ContactUs />
             </section>
 
-            <section id="תפריט" className='manu-container'>
+            {/* <section id="תפריט" className='manu-container'>
                 <Menus />
-            </section>
+            </section> */}
 
             {/* <section id="Reservations" className="reservation" >
                 <Reservation />
             </section> */}
 
-            <section className="footer">
+            {/* <section className="footer">
                 <Footer />
-            </section>
+            </section> */}
         </div>
     )
 }
