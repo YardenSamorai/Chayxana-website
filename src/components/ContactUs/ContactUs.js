@@ -72,10 +72,10 @@ const ContactUs = () => {
                         <h5>אנו מציעים קייטרינג בשירות מלא לכל אירוע, גדול כקטן. אנו מבינים את הצרכים שלך ואנו נדאג לאירוע שלא ישכח ולענות על הקריטריונים הגדולים מכולם, הן במראה והן בטעם. אל תהסס ליצור איתנו קשר.</h5>
                     </div>
                     <div className="contact-us-inputs">
-                        <input placeholder='אימייל' type="email" id="email" onChange={onInputNameHandler} />
-                        <input placeholder='טלפון' type="number" id="phone" onChange={onInputNameHandler} />
-                        <input placeholder='שם' type="text" id="name" onChange={onInputNameHandler} />
-                        <button onClick={onClickSendHandler} >שלח</button>
+                        <input placeholder='אימייל' type="email" id="email" onChange={onInputNameHandler} className="app-input" />
+                        <input placeholder='טלפון' type="phone" id="phone" onChange={onInputNameHandler} className="app-input" />
+                        <input placeholder='שם' type="text" id="name" onChange={onInputNameHandler} className="app-input" />
+                        <button onClick={onClickSendHandler} className="app-btn">שלח</button>
                     </div>
                 </div>
             </form >
