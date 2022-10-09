@@ -6,7 +6,7 @@
 
 .ourstory-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
     border-radius: 10px;
 }
@@ -24,27 +24,28 @@
 
 .ourstory-text {
     flex-grow: 0.8;
+    margin: 10px 0;
 }
 
 .ourstory-text>h1 {
     font-size: 5.2em;
     justify-content: center;
     display: flex;
-    margin-bottom: -50px;
-
-}
-
-.ourstory-text>p {
-    height: 100px;
-    width: 700px;
-    text-align: center;
-    font-size: 1.8em;
+    margin: 0;
 }
 
 .ourstory-text>h3 {
     font-size: 2.2em;
     text-align: center;
     color: #A4984C;
+    margin: 0;
+}
+
+.ourstory-text>p {
+    height: 100px;
+    width: 700px;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .img-ourstory {
@@ -68,7 +69,7 @@
 
 @media screen and (max-width: 1025px) {
     .ourstory-card {
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: center;
     }
 

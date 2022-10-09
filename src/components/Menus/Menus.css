@@ -1,12 +1,10 @@
 .menus-container {
     justify-content: space-between;
-    margin: 0px 200px 200px 200px;
-    padding: 20px;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 12px 4px #000000;
+    padding: 20px;
     text-align: center;
     font-family: var(--font-heb);
+    position: relative;
 }
 
 .Menu-title>h1 {
@@ -16,7 +14,7 @@
     margin-bottom: 20px;
 }
 
-.Menu-title > h4{
+.Menu-title>h4 {
     color: #A4984C;
     font-size: 2.0em;
 }
@@ -25,9 +23,32 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-} 
+}
 
 .menu-item {
     width: 50%;
     margin-bottom: 20px;
+}
+
+.selected-menu {
+    position: relative;
+    width: 65%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1025px) {
+    .menu-item-container {
+        justify-content: center;
+    }
+
+    .menu-item {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 725px) {
+    .selected-menu {
+        width: 90%;
+    }
 }

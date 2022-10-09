@@ -36,10 +36,6 @@ const Home = () => {
                 <Menus />
             </section>
 
-            {/* <section id="Reservations" className="reservation" >
-                <Reservation />
-            </section> */}
-
             <section className="footer">
                 <Footer />
             </section>

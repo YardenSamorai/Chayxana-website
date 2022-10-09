@@ -1,8 +1,8 @@
 .big-bg {
     position: absolute;
-    top: -5px;
+    top: -1px;
     z-index: -1;
-    width: 101%;
+    width: 100%;
     max-height: 80%;
     filter: brightness(0.7) blur(1.4px);
     object-fit: cover;
