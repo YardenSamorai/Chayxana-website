@@ -2,29 +2,33 @@
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 10px;
+    width: 100%;
+    --arrow-size: 0.7em;
 }
 
 .icon-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
-
 }
-
 
 .icon-item {
     position: relative;
-    padding: 20px 50px;
+    padding: 20px 0;
+}
+
+.icon-item>img {
+    width: 100%;
 }
 
 .icon-item:hover:before {
     content: '';
     position: absolute;
-    left: calc(50% - 20px);
+    left: calc(50% - var(--arrow-size));
     bottom: -10px;
-    border-bottom: 20px solid var(--color-green);
-    border-right: 20px solid transparent;
-    border-left: 20px solid transparent;
+    border-bottom: var(--arrow-size) solid var(--color-green);
+    border-right: var(--arrow-size) solid transparent;
+    border-left: var(--arrow-size) solid transparent;
 }
 
 .active {
@@ -34,15 +38,14 @@
 .active:before {
     content: '';
     position: absolute;
-    left: calc(50% - 20px);
+    left: calc(50% - var(--arrow-size));
     bottom: -10px;
-    border-bottom: 20px solid var(--color-green);
-    border-right: 20px solid transparent;
-    border-left: 20px solid transparent;
+    border-bottom: var(--arrow-size) solid var(--color-green);
+    border-right: var(--arrow-size) solid transparent;
+    border-left: var(--arrow-size) solid transparent;
 }
 
 .active>img {
-
     transform: rotate(-30deg);
     transition: all 0.5s ease-in-out;
     margin-bottom: -2px;

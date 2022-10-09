@@ -69,3 +69,10 @@
     font-family: var(--font-heb);
 
 }
+
+@media screen and (max-width: 845px) {
+    .contact-bg {
+        width: auto;
+        height: 100%;
+    }
+}

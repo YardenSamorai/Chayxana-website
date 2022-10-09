@@ -10,7 +10,7 @@ const Menus = () => {
     const [menu, setMenu] = useState([]);
     const [currentMenu, setCurrentMenu] = useState("hotmeal");
     const [currentPath, setCurrentPath] = useState(ListApi[currentMenu]);
-    const [Page, setPage] = useState("");
+    const [Page, setPage] = useState(currentMenu);
 
     const getData = () => {
         currentPath.onSnapshot((querySnapshot) => {
@@ -29,21 +29,22 @@ const Menus = () => {
         setCurrentPath(ListApi[currentMenu])
 
 
-    }, [currentMenu,currentPath])
+    }, [currentMenu, currentPath])
+
+    const texts = {
+        title: "התפריט שלנו",
+    }
 
     return (
-
         <div dir="rtl" className="menus-container">
             <div className="Menu-title">
-                <h1>התפריט שלנו</h1>
+                <h1>{texts.title}</h1>
                 <h4>{Page}</h4>
             </div>
-            <div className="SelectedMenu">
+            <div className="selected-menu">
                 <SelectedMenu currentMenu={currentMenu} setCurrentMenu={setCurrentMenu} Page={Page} setPage={setPage} />
             </div>
-
             <div className="menu-item-container">
-
                 {menu && menu.map(object => {
                     return (
                         <div className="menu-item">
@@ -51,12 +52,9 @@ const Menus = () => {
                         </div>
                     )
                 })}
-
             </div>
-
         </div>
     )
-
 }
 
 export default Menus
