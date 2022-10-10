@@ -32,3 +32,14 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 845px) {
+    .navbar-container {
+        padding: 50px 50px;
+        padding-top: 100px;
+    }
+
+    .navbar-container>.logo {
+        max-width: 300px;
+    }
+}

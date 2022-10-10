@@ -88,9 +88,9 @@
 }
 
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 640px) {
     .ourstory-images {
-        padding-top: 80px;
+        padding-top: 50px;
     }
 
     .ourstory-text {
