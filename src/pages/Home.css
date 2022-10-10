@@ -109,3 +109,9 @@ html {
         margin: 0;
     }
 }
+
+@media screen and (max-width: 845px) {
+    .big-bg {
+        height: 100%;
+    }
+}
