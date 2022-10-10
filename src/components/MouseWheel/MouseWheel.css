@@ -39,3 +39,23 @@
         height: 10px;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .mouse-icon {
+        height: 60px;
+        width: 30px;
+        border-radius: 8px;
+    }
+
+    @keyframes scrollmove {
+        from {
+            bottom: 10px
+        }
+    
+        to {
+            bottom: 25px;
+        }
+    
+    }
+    
+}
