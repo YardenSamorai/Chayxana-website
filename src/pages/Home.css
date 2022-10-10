@@ -68,7 +68,7 @@ html {
     background-size: cover;
 }
 
-@media screen and (max-width: 1921px) and (min-width: 1050px)  {
+@media screen and (max-width: 1921px) and (min-width: 1050px) {
     .logo-title {
         margin-top: 0;
         height: 40em;
@@ -113,5 +113,10 @@ html {
 @media screen and (max-width: 845px) {
     .big-bg {
         height: 100%;
+    }
+
+    .logo-text,
+    .cutlery-logo {
+        display: none;
     }
 }
