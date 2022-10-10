@@ -13,12 +13,14 @@
 }
 
 .menu-content-price > h4 {
-  font-size: 1.6em;
+  font-size: 1.6rem;
   color: var(--color-black);
+  text-align: right;
 }
 
 .menu-content-price> :last-child {
   color: var(--color-green);
+  text-align: left;
 }
 
 .menu-content-price>.dot {
@@ -29,5 +31,18 @@
 
 .menu-content>.menu-content-desc {
   margin-top: -15px;
-  font-size: 1.35em;
+  font-size: 1.35rem;
+  text-align: right;
+}
+
+
+@media screen and (max-width: 641px) {
+  .menu-content>.menu-content-desc {
+    font-size: 1em;
+  }
+
+  .menu-content-price > h4 {
+    font-size: 1.1em;
+  }
+  
 }

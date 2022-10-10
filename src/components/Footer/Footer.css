@@ -1,5 +1,5 @@
 .main-footer {
-    width: 78%;
+    width: 90%;
     margin: auto;
     padding: 20px;
     color: white;
@@ -19,6 +19,12 @@
 .col {
     padding: 20px;
     margin: 10px;
+    text-align: center;
+}
+
+.col>.list-unstyled {
+    margin: 0 !important;
+    padding: 0;
 }
 
 .row ul {
@@ -32,18 +38,25 @@
     color: var(--color-green);
 }
 
-.footer-logo {
-    justify-self: flex-start;
-}
 
 .box-1 {
-    display:flex;
+    display: flex;
+    flex-grow: 1;
 }
 
-li > img {
-    padding:10px;
-    filter:invert(1);
+.box-1>* {
+    flex-grow: 1;
+}
+
+li>img {
+    padding: 10px;
+    filter: invert(1);
     cursor: pointer;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -54,7 +67,7 @@ li > img {
 
     .box-1 {
         flex-direction: column;
-        display:flex;
+        display: flex;
     }
 
     .box-1>.col,
@@ -63,14 +76,14 @@ li > img {
         text-align: center;
     }
 
-    .col>.list-unstyled {
-        margin: 0 !important;
-        padding: 0;
-    }
-
     .box-2 {
-        width: 40%;
         align-items: center;
         margin-top: 30px;
+    }
+
+    .footer-img {
+        width: 40%;
+        margin: auto;
+        margin-top: 50px;
     }
 }

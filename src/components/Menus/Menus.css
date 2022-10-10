@@ -32,11 +32,17 @@
 
 .selected-menu {
     position: relative;
-    width: 65%;
+    width: 60%;
     margin: auto;
 }
 
 @media screen and (max-width: 1025px) {
+    .Menu-title>h1 {
+        margin: 0;
+        margin-top: 30px;
+        font-size: 3.0em;
+    }
+
     .menu-item-container {
         justify-content: center;
     }
@@ -49,6 +55,11 @@
 
 @media screen and (max-width: 725px) {
     .selected-menu {
-        width: 90%;
+        width: 95%;
+    }
+
+
+    .menu-item {
+        width: 100%;
     }
 }

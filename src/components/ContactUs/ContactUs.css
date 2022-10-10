@@ -52,6 +52,7 @@
     align-items: center;
     width: 40%;
     margin: auto;
+    max-width: 300px;
 }
 
 .contact-us-inputs>input {
@@ -74,5 +75,9 @@
     .contact-bg {
         width: auto;
         height: 100%;
+    }
+
+    .contact-us-inputs {
+        width: 50%;
     }
 }

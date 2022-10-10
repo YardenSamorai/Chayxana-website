@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import MenuItem from './MenuItem';
+import MenuItem from './MenuItem/MenuItem';
 import "./Menus.css";
 import firebase from '../../firebase';
 import SelectedMenu from './SelectedMenu/SelectedMenu';

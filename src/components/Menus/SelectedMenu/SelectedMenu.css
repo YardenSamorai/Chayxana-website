@@ -15,10 +15,12 @@
 .icon-item {
     position: relative;
     padding: 20px 0;
+    flex-grow: 1;
 }
 
 .icon-item>img {
-    width: 100%;
+    width: 80%;
+    max-width: 64px;
 }
 
 .icon-item:hover:before {
