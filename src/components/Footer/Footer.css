@@ -36,8 +36,14 @@
     justify-self: flex-start;
 }
 
-.embd-map {
-    
+.box-1 {
+    display:flex;
+}
+
+li > img {
+    padding:10px;
+    filter:invert(1);
+    cursor: pointer;
 }
 
 
@@ -48,6 +54,7 @@
 
     .box-1 {
         flex-direction: column;
+        display:flex;
     }
 
     .box-1>.col,
@@ -63,7 +70,7 @@
 
     .box-2 {
         width: 40%;
-        margin: auto;
+        align-items: center;
         margin-top: 30px;
     }
 }
