@@ -14,7 +14,7 @@
 .ourstory-images {
     display: flex;
     position: relative;
-    flex-grow: 1.2;
+    flex-grow: 1;
 }
 
 .ourstory-images>img {
@@ -23,7 +23,7 @@
 }
 
 .ourstory-text {
-    flex-grow: 0.8;
+    flex-grow: 1;
     margin: 10px 0;
 }
 
@@ -42,10 +42,10 @@
 }
 
 .ourstory-text>p {
-    height: 100px;
-    width: 700px;
+    max-width: 700px;
     text-align: center;
     font-size: 1.5em;
+    margin: auto;
 }
 
 .img-ourstory {
@@ -84,24 +84,16 @@
     .ourstory-text>p {
         width: unset;
     }
-}
-@media screen and (max-width: 590px) {
-    .ourstory-card {
-        flex-direction: column;
-        justify-content: center;
-    }
 
+}
+
+
+@media screen and (max-width: 590px) {
     .ourstory-images {
-        justify-content: space-between;
         padding-top: 150px;
     }
 
     .ourstory-text {
-        flex-grow: 1;
         text-align: center;
-    }
-
-    .ourstory-text>p {
-        width: unset;
     }
 }
