@@ -35,7 +35,6 @@ const ContactUs = () => {
             to_name: "רובין",
             message: `${inputPhone} - ${inputName}`
         }).then((res) => {
-            console.log('Email was send successfully', res);
             alert("תודה, נציג מטעמנו יחזור אליך בהקדם.");
         }).error((e)=>{
             alert("קיימת תקלה במערכת , אנא התקשר לפרטים נוספים");
@@ -45,7 +44,7 @@ const ContactUs = () => {
 
 
     const onClickSendHandler = () => {
-        console.log();
+
         if (inputName !== "" && inputPhone !== "" && inputEmail !== "") {
             if (inputPhone.length < 8 || inputPhone.length > 10) {
                 alert("הכנס מספר טלפון תקין בבקשה");
@@ -69,7 +68,7 @@ const ContactUs = () => {
                 <div className="contact-form">
                     <div className="contact-form-header">
                         <h3>למידע נוסף והזמנות השאירו פרטים</h3>
-                        <h5>אנו מציעים קייטרינג בשירות מלא לכל אירוע, גדול כקטן. אנו מבינים את הצרכים שלך ואנו נדאג לאירוע שלא ישכח ולענות על הקריטריונים הגדולים מכולם, הן במראה והן בטעם. אל תהסס ליצור איתנו קשר.</h5>
+                        <h5>למידע נוסף לאירועים קטנים או הזמנות ניתן להשאיר פרטים ואנו נחזור אליכם בהקדם האפשרי.</h5>
                     </div>
                     <div className="contact-us-inputs">
                         <input placeholder='אימייל' type="email" id="email" onChange={onInputNameHandler} className="app-input" />

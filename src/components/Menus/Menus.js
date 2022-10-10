@@ -10,7 +10,7 @@ const Menus = () => {
     const [menu, setMenu] = useState([]);
     const [currentMenu, setCurrentMenu] = useState("hotmeal");
     const [currentPath, setCurrentPath] = useState(ListApi[currentMenu]);
-    const [Page, setPage] = useState(currentMenu);
+    const [Page, setPage] = useState("מסורתי");
 
     const getData = () => {
         currentPath.onSnapshot((querySnapshot) => {
