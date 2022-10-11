@@ -36,10 +36,10 @@ const ContactUs = () => {
             message: `${inputPhone} - ${inputName}`
         }).then((res) => {
             alert("תודה, נציג מטעמנו יחזור אליך בהקדם.");
-        }).error((e)=>{
+        }).error((e) => {
             alert("קיימת תקלה במערכת , אנא התקשר לפרטים נוספים");
         }).
-         e.target.reset();
+            e.target.reset();
     };
 
 
@@ -52,18 +52,16 @@ const ContactUs = () => {
             else if (!(inputEmail.includes("@") || inputEmail.includes(".") || inputEmail.includes("com"))) {
                 alert("יש להכניס אימייל תקין");
             }
-        
+
         }
         else {
             alert("יש למלא את כל השדות");
         }
-        
-
     }
 
     return (
         <div className="contact-container">
-            <img className="contact-bg" src={require("../../assets/peppers.jpg")}/>
+            <img className="contact-bg" src={require("../../assets/peppers.jpg")} />
             <form ref={form} id="Contact" onSubmit={sendEmail} dir="rtl">
                 <div className="contact-form">
                     <div className="contact-form-header">
@@ -79,7 +77,6 @@ const ContactUs = () => {
                 </div>
             </form >
         </div>
-
     )
 }
 
