@@ -17,6 +17,7 @@ const Home = () => {
                     <div className="logo-text">
                         <h1>מסעדת צ'ייחנה</h1>
                         <h4>Chayxana Resturant</h4>
+                        <h4>כשר</h4>
                     </div>
                     <img src={require('../assets/cutlery-logo.png')} alt="big-bg" className="cutlery-logo" />
                     <MouseWheel />
